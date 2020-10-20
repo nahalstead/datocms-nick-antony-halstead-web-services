@@ -7,6 +7,11 @@ export default function() {
 
   imagesLoaded(slider).on('always', () => {
     slider.classList.remove('is-loading');
-    lory(slider, { infinite: 2, enableMouseEvents: true });
+    lory(slider, { 
+    	infinite: 1, 
+    	enableMouseEvents: true,
+    	slidesToScroll: 1,
+    	rewind: true
+	});
   });
 }
