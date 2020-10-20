@@ -12,7 +12,7 @@
           <ul class="slider__slides js_slides">
             <% work.gallery.each do |image| %>
               <li class="slider__slide js_slide">
-                <img src="<%= image.url(h: 575, fm: 'jpg') %>">
+                <img src="<%= image.url(h: 575, fm: 'jpg', q: 100) %>">
               </li>
             <% end %>
           </ul>
