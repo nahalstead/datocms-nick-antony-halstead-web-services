@@ -15,7 +15,8 @@
       <div class="container__sidebar">
         <div class="sidebar">
           <h6 class="sidebar__title">
-            <a href="/"><%= dato.site.global_seo.site_name %></a>
+<!--             <a href="/"><%= dato.site.global_seo.site_name %></a> -->
+            <a href="/"><%= dato.home.logo %></a>
           </h6>
 
           <ul class="sidebar__menu">
@@ -26,11 +27,6 @@
               <a href="/about">About</a>
             </li>
           </ul>
-          <p class="sidebar__social">
-            <% dato.social_profiles.each do |profile| %>
-              <a href="<%= profile.url %>" class="social social--<%= profile.profile_type.downcase.gsub(/ +/, '-') %>"></a>
-            <% end %>
-          </p>
           <div class="sidebar__copyright">
             <%= dato.home.copyright %>
           </div>
