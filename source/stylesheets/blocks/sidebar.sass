@@ -1,12 +1,21 @@
+.sidebar 
+  font-size: 18px
+  letter-spacing: 1px
+  line-height: 20px
+  text-rendering: optimizeLegibility
+
 .sidebar__title
-  margin-bottom: 20px
+  font-size: 18px
+  font-weight: normal
+  letter-spacing: 1px
+  position: fixed
+  top: 35px
+  left: 35px
+  z-index: 999
 
   a
-    font-size: 16px
-    text-transform: uppercase
-    font-weight: normal
+    color: #000
     text-decoration: none
-    color: $dark-body-color
 
     &:hover
       border-bottom: dotted 1px #9055a2
@@ -24,20 +33,27 @@
 
 .sidebar__menu
   margin-bottom: 20px
+  position: fixed
+  top: 35px
+  right: 70px
+  z-index: 999
+
 
   li
     a
       text-decoration: none
-      display: block
+      display: inline-block
       padding-left: 0px
-      color: $base-body-color
+      color: #000
       position: relative
+      opacity: 0.4
+      margin: 0 0 10px 20px
 
       &:hover
-        color: $active-color
+        border-bottom: 1px solid #000
 
     &.is-active a
-      font-weight: bold
+      font-weight: normal
       color: $active-color
 
 .sidebar__social
