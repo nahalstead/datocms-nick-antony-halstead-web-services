@@ -46,7 +46,9 @@
           </div>
         </div>
         <div class="video">
-          <%= dato.home.video.url %>
+          <video controls>
+            <source src="<%= dato.home.video.url %>">
+          </video>
         </div>
         <%= yield %>
       </div>
